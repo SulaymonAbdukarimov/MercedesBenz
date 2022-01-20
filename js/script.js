@@ -5,8 +5,8 @@ window.addEventListener("DOMContentLoaded", () => {
     loader.style.opacity = 0;
     setTimeout(function () {
       loader.style.display = "none";
-    }, 100); //1500
-  }, 200); //2000
+    }, 1500); //1500
+  }, 2000); //2000
 
   // TABS
   const tabs = document.querySelectorAll(".tabheader__item"),
@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", () => {
     modal.classList.add("show");
     modal.classList.remove("hide");
     document.body.style.overflow = "hidden";
-    // clearInterval(showModalByTime);
+    clearInterval(showModalByTime);
   }
   function hideModal() {
     modal.classList.add("hide");
@@ -72,7 +72,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  //const showModalByTime = setTimeout(showModal, 5000);
+  const showModalByTime = setTimeout(showModal, 5000);
 
   function showModalByScroll() {
     if (
